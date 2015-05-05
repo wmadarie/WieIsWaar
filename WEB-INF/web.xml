@@ -4,4 +4,14 @@
          xmlns:web="www.oracle.com/webfolder/technetwork/jsc/xml/ns/.../web-app_3_0.xsd"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          id="WebApp_ID" version="3.0">
+  <display-name>TodoSample</display-name>
+    <servlet>
+      <servlet-name>todo</servlet-name>
+      <servlet-class>TodoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>todo</servlet-name>
+      <url-pattern>/example</url-pattern>
+    </servlet-mapping>
 </web-app>
