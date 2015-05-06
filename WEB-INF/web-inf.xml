@@ -59,6 +59,13 @@
   <property name="project.jdk.home" value=""/>
   <property name="project.jdk.bin" value=""/>
   <property name="project.jdk.classpath" value=""/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.web-inf.classpath">
+    <pathelement location="${basedir}"/>
+  </path>
   <!-- Register Custom Compiler Taskdefs -->
   <property name="javac2.home" value="${idea.home}/lib"/>
   <path id="javac2.classpath">
@@ -93,13 +100,21 @@
     <!-- Paths to be included in compilation bootclasspath -->
   </path>
   
-  <path id="web-inf.module.production.classpath"/>
+  <path id="web-inf.module.production.classpath">
+    <path refid="library.web-inf.classpath"/>
+  </path>
   
-  <path id="web-inf.runtime.production.module.classpath"/>
+  <path id="web-inf.runtime.production.module.classpath">
+    <path refid="library.web-inf.classpath"/>
+  </path>
   
-  <path id="web-inf.module.classpath"/>
+  <path id="web-inf.module.classpath">
+    <path refid="library.web-inf.classpath"/>
+  </path>
   
-  <path id="web-inf.runtime.module.classpath"/>
+  <path id="web-inf.runtime.module.classpath">
+    <path refid="library.web-inf.classpath"/>
+  </path>
   
   
   <patternset id="excluded.from.module.web-inf">
