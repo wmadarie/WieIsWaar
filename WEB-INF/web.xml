@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns="antlib:org.apache.tools.ant"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/ejb-jar_3_0.xsd"
+         version="3.0">
+    <target name="ant" />
+    <display-name>TodoSample</display-name>
+    <servlet>
+        <servlet-name>todo</servlet-name>
+        <servlet-class>TodoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>todo</servlet-name>
+        <url-pattern>/example</url-pattern>
+    </servlet-mapping>
+</project>
